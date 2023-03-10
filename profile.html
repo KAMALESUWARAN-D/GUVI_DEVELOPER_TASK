@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="js/profile.js" class="active">
+            <h2 class="title">Additional Information</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Enter your Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <div class="input-group">
+                    <input type="number" pattern=".{10,}" id="contact" placeholder="Enter your contact">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <div class="input-group">
+                    <input type="number" pattern=".{2,}" id="age" placeholder="Enter your Age">
+                </div>
+            
+            </div>
+            <button type="submit" class="btn-submit">Update</button>
+
+
+        </form>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

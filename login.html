@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="php/login.php" method="POST" class="active" id="login">
+        <form action="#" >
+            <h2 class="title">Login </h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email address">
+                    <i class='bx bx-envelope'></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <input type="password" pattern=".{8,}" id="password" placeholder="Your password">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <span class="help-text">At least 8 characters</span>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <p>I don't have an account. <a href="register.html">Register</a></p>
+        </form>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
